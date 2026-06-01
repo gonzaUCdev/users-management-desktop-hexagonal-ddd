@@ -4,9 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.jcaa.usersmanagement</groupId>
-  <artifactId>users-management</artifactId>
-  <version>1.4</version>
+  <groupId>co.edu.udec</groupId>
+  <artifactId>guarderia</artifactId>
+  <version>1.0</version>
+  <name>Guarderia - Sistema de Gestion de Guarderia Infantil</name>
+  <description>Capa de dominio para administracion de guarderia infantil con arquitectura hexagonal y DDD</description>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
@@ -99,6 +101,14 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- AssertJ para assertions fluidas en pruebas -->
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.26.3</version>
+      <scope>test</scope>
+    </dependency>
+
     <!-- SLF4J Simple para logging -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -149,7 +159,7 @@
             </goals>
             <configuration>
               <excludes>
-                <exclude>com/jcaa/usersmanagement/Main.class</exclude>
+                <exclude>co/edu/udec/guarderia/Main.class</exclude>
               </excludes>
             </configuration>
           </execution>
