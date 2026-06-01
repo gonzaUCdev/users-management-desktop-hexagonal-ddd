@@ -28,7 +28,7 @@ class MenuFactoryTest {
         var platos = List.of(new Plato(new NombrePlato("Sopa"),
                 List.of(new NombreIngrediente("Agua")), BigDecimal.ONE));
 
-        assertThatThrownBy(() -> MenuFactory.crearMenu(null, platos))
+        assertThatThrownBy(() -> MenuFactory.crearMenu((Integer) null, platos))
                 .isInstanceOf(RuntimeException.class)
                 .hasMessageContaining("ID del menu");
     }
