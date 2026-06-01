@@ -126,6 +126,9 @@
         <configuration>
           <source>17</source>
           <target>17</target>
+          <excludes>
+            <exclude>com/jcaa/**</exclude>
+          </excludes>
           <annotationProcessorPaths>
             <path>
               <groupId>org.projectlombok</groupId>
