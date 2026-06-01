@@ -1,9 +1,9 @@
-package com.jcaa.usersmanagement.domain.valueobject;
+package co.edu.udec.guarderia.domain.valueobjects;
 
 public record NumeroCuentaBancaria(String value) {
     public NumeroCuentaBancaria {
         if (value == null || value.isBlank()) {
-            throw new IllegalArgumentException("NumeroCuentaBancaria no puede estar vacio");
+            throw new IllegalArgumentException("El numero de cuenta bancaria no puede estar vacio");
         }
     }
 }
